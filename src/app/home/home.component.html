@@ -1,1 +1,113 @@
-<p>home works!</p>
+<nav id="menu-superior">
+  <img src="assets/logo-elo7.svg" />
+  <ul>
+    <li>
+      <a href="#inicio"> Home </a>
+    </li>
+
+    <li>
+      <a href="#time">Nosso time</a>
+    </li>
+
+    <li>
+      <a href="#empresa">Sobre nós</a>
+    </li>
+
+    <li>
+      <a href="#vagas">Vagas</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="inicio">
+  <div class="imagem-header">
+    <h1>Trabalhe no Elo7</h1>
+  </div>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+    efficitur ex, at malesuada ligula. Pellentesque odio ipsum, viverra a eros
+    sit amet, fringilla sagittis augue Fusce risus tellus, tempus quis lacinia
+    in, vehicula ut turpis
+  </p>
+
+  <hr />
+
+  <p>
+    <a href="#vagas">VAGAS EM ABERTO »</a>
+  </p>
+</div>
+
+<div id="time">
+  <div class="div-principal">
+    <img src="assets/placeholder-video.png" />
+    <div class="div-ceo">
+      <h2>PALAVRAS DO CEO</h2>
+      <span>Carlos Curioni</span>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+        efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio
+        ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus
+        tellus, tempus quis lacinia in, vehicula ut turpis.
+      </p>
+    </div>
+    <h2 class="centralizado">CONHEÇA NOSSO TIME FORA DE SÉRIE</h2>
+    <img src="assets/camila.png" />
+    <img src="assets/guto.png" />
+    <img src="assets/david.png" />
+    <img src="assets/beatriz.png" />
+  </div>
+</div>
+
+<div id="empresa">
+  <div class="div-principal">
+    <div class="div-img">
+      <img src="assets/qualidade.png" />
+      <h2>QUALIDADE DE VIDA</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+        efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio
+        ipsum,
+      </p>
+    </div>
+    <div class="div-img">
+      <img src="assets/descontracao.png" />
+      <h2>AMBIENTE DESCONTRAÍDO</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing eli Quisque ut
+        efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio
+        ipsum, viverra a eros sit amet, fringilla sagittis augue. Fusce risus
+        tellus, tempus quis lacinia in, vehicula ut turpis.
+      </p>
+    </div>
+    <div class="div-img">
+      <img src="assets/atividades.png" />
+      <h2>ATIVIDADES EXTRAS</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
+        efficitur ipsum risus gravida ex, at malesuada ligula. Pellentesque odio
+        ipsum, viverra a eros sit amet, fringilla sagittis augue, Fusce risus
+        tellus,
+      </p>
+    </div>
+  </div>
+
+  <hr />
+  <p class="saiba-mais"><a href="https://elo7.gupy.io/">SAIBA MAIS »</a></p>
+</div>
+
+<div id="vagas">
+  <img src="assets/foto-bottom.png" />
+  <div class="div-principal">
+    <h2>VAGAS EM ABERTO</h2>
+    <h2>DESENVOLVIMENTO</h2>
+
+    <ng-container *ngFor="let vaga of vagas">
+      <p *ngIf="vaga.ativa">
+        <a class="vaga" href="{{vaga.link}}">{{vaga.cargo}}</a>
+        <span class="localizacao" *ngIf="vaga.localizacao != null">{{vaga.localizacao.bairro}} - {{vaga.localizacao.cidade}}, {{vaga.localizacao.pais}}</span>
+        <span class="localizacao" *ngIf="vaga.localizacao == null">Brasil</span>
+     </p>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,201 @@
+* {
+  font-family: "museo_sans", sans-serif;
+}
+
+#inicio,
+#time,
+#empresa,
+#vagas {
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 960px;
+  display: block;
+}
+
+hr {
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #359c9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.div-img {
+  text-align: center;
+  width: 33%;
+}
+
+#menu-superior {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+  width: 960px;
+  display: block;
+  border-bottom: 10px solid #fdb933;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    width: 870px;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 0px;
+  }
+
+  ul li {
+    display: inline;
+  }
+
+  ul li a {
+    color: #fdb933;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.4s;
+  }
+
+  ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+#inicio {
+  .imagem-header {
+    height: 450px;
+    background-image: url(/assets/foto-header.png);
+    align-items: center;
+    display: flex;
+    background-repeat: round;
+    text-align: center;
+  }
+
+  h1 {
+    color: #fff;
+    width: 100%;
+    margin-top: 230px;
+    font-size: 50px;
+    text-shadow: 0 0 6px black;
+  }
+
+  p {
+    padding: 0px 50px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #9b9b9b;
+    text-align: center;
+  }
+}
+
+#empresa {
+  .div-principal {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  h2 {
+    margin: 30px;
+    color: #7d7873;
+    font-size: 18px;
+  }
+
+  p {
+    color: #7d7873;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 0px 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+
+  p.saiba-mais {
+    text-align: center;
+  }
+}
+
+#time {
+  .div-principal {
+    background-color: #f8f8f8;
+    padding: 50px;
+  }
+
+  h2 {
+    color: #7d7873;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: #f9a964;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  img:not(:last-child) {
+    padding-right: 9px;
+  }
+
+  .div-ceo {
+    float: right;
+    width: 413px;
+    margin-left: 35px;
+  }
+
+  p {
+    color: #9b9b9b;
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  h2.centralizado {
+    text-align: center;
+    margin: 50px;
+    width: 220px;
+    margin-left: 310px;
+  }
+}
+
+#vagas {
+  h2:first-child {
+    text-align: center;
+    margin: 50px;
+  }
+
+  h2 {
+    margin: 30px 0px 40px 0px;
+    color: #7d7873;
+    font-size: 18px;
+  }
+
+  p {
+    color: #7d7873;
+    line-height: 22px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: bold;
+  }
+
+  .vaga {
+    color: #359c9c;
+  }
+
+  .localizacao {
+    float: right;
+    color: #9b9b9b;
+  }
+
+  p:last-child {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 960px;
+  }
+}
